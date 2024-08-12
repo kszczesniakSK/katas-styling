@@ -5,6 +5,9 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React + TS</title>
+    <!-- example script loaded async - hotjar is analytics script that does not depend on DOM being fully loaded so we can load it async -->
+    <script src="https://path.to.hotjar/script.js" async></script>
+    <script src="https://path.to.some.script.that.requires.loaded.dom/script.js" defer></script>
   </head>
   <body>
     <div id="root"></div>
