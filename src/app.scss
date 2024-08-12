@@ -22,5 +22,35 @@
   // Apply styles using the placeholder and mixin
   .button {
     @extend %flex-center;
-    @include button-style(#1e5014, #fff);
+    @include button-style(#483697, #fff);
   }
+
+
+.article-hover-effect {
+  transition: transform 0.3s ease-in-out;
+}
+
+.article-hover-effect:hover {
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+
+.content-auto {
+  content-visibility: auto,
+}
